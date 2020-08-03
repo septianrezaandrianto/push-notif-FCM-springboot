@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "137d6377-a943-4a89-a87c-72ec8e954d61",
+		"name": "Firebase RnD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "firebase-second",
+			"item": [
+				{
+					"name": "GET Notification",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "localhost:8082/api/notification",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"notification"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Topic",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"Hello\",\r\n    \"message\":\"The message...\",\r\n    \"topic\":\"contactTopic\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/api/notification/topic",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"notification",
+								"topic"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \"title\":\"Pesan baru\", \r\n    \"message\":\"Anda mendapatkan pesan baru\",\r\n    \"token\":\"don00482TTmbe-sTveu6WT:APA91bFyj-K-b0xRawuVVpsp7JL4qO8WCR9fHxl62Vtz10iy1sMZVgoWO2eLNlaS3Qatgq4LMi3GZQZQGSJjwny9E7CAiR5RStlbHMGQm1-dlTtrmHI2ilcS52TDJvRRibxpDMh8AFBK\",\r\n    \"topic\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/api/notification/token",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"notification",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Data",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"Hello\",\r\n    \"message\":\"Data message\",\r\n    \"topic\":\"contactTopic\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/api/notification/data",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"notification",
+								"data"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
